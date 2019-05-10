@@ -2,7 +2,7 @@ from conans import ConanFile, CMake, tools
 
 class ValuePtrConan(ConanFile):
     name = "value-ptr"
-    version = "0.2"
+    version = "0.2.1"
     license = "MIT"
     author = "Bruce Collie (brucecollie82@gmail.com)"
     url = "https://github.com/Baltoli/value_ptr_conan"
@@ -18,7 +18,7 @@ class ValuePtrConan(ConanFile):
 
     def source(self):
         self.run("git clone https://github.com/baltoli/value_ptr.git")
-        self.run("cd value_ptr && git checkout v0.2")
+        self.run("cd value_ptr && git checkout v0.2.1")
 
     def build(self):
         cmake = CMake(self)
