@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(PackageTest CXX)
 
+add_compile_options(
+  "$<$<COMPILE_LANGUAGE:CXX>:-std=c++17>"
+)
+
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
